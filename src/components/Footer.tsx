@@ -1,6 +1,6 @@
 import { Github, Linkedin, Mail, MapPin, Phone, Code } from 'lucide-react';
 import { Button } from '../components/ui/button';
-import portfolioData from '../data/portfolio.json';
+import {portfolioData} from '../data/portfolio.ts';
 
 export const Footer = () => {
   const { personal } = portfolioData;

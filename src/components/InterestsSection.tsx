@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { InterestModal } from './InterestModal';
-import portfolioData from '../data/portfolio.json';
+import {portfolioData} from '../data/portfolio.ts';
 
 export const InterestsSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);

@@ -1,4 +1,6 @@
-{
+
+
+export const portfolioData = {
   "personal": {
     "name": "ANNLYN SARAH",
     "title": "Full Stack Developer",
@@ -15,27 +17,27 @@
   },
   "experience": [
     {
-      "id": 1,
-      "company": "Ramco Systems",
-      "position": "Software Engineer 1",
-      "duration": "Sept 2023 - Present",
-      "description": "Had me engaging on technology daily, solving complex problems, and collaborating with talented teams to deliver high-quality software solutions",
-      "image": "/placeholder-experience-1.jpg",
-      "details": {
-        "responsibilities": ["Developed and maintained responsive web applications", "Configured Jenkins pipeline to minimize the build time", "Established mobile-web communication bridge to support cross-platform interactions and device sync-up"],
-        "technologies": ["React", "Node.js", "Redux", "GraphQL", "Jenkins"]
-      }
-    },
-    {
       "id": 2,
       "company": "Ramco Systems",
       "position": "Intern - Project Trainee",
       "duration": "Feb 2023 - Aug 2023",
       "description": "Gained hands-on experience in software development, contributing to real-world projects and collaborating with cross-functional teams",
-      "image": "/placeholder-experience-2.jpg",
+      "image": "../assets/rsl.jpg",
       "details": {
         "responsibilities": ["Developed responsive web applications", "Collaborated with design teams", "Maintained code quality"],
         "technologies": ["TypeScript", "SCSS", "React", "Git"]
+      }
+    },
+    {
+      "id": 1,
+      "company": "Ramco Systems",
+      "position": "Software Engineer 1",
+      "duration": "Sept 2023 - Present",
+      "description": "Had me engaging on technology daily, solving complex problems, and collaborating with talented teams to deliver high-quality software solutions",
+      "image": "../assets/rsl.jpg",
+      "details": {
+        "responsibilities": ["Developed and maintained responsive web applications", "Configured Jenkins pipeline to minimize the build time", "Established mobile-web communication bridge to support cross-platform interactions and device sync-up"],
+        "technologies": ["React", "Node.js", "Redux", "GraphQL", "Jenkins"]
       }
     }
   ],
@@ -45,8 +47,8 @@
       "institution": "Ramco Institute of Technology",
       "degree": "BE CSE",
       "year": "Aug 2019 - May 2023",
-      "description": "The place that brought like-minded friends together, laid foundation for our careers, and carved me who I am today",
-      "image": "/placeholder-education-1.jpg",
+      "description": "The place that brought like-minded friends together, laid foundation for our careers, and carved me as I am today",
+      "image": "../assets/rit.jpg",
       "details": {
         "gpa": "8.27/10",
         "honors": ["NCC"],
@@ -59,7 +61,7 @@
       "degree": "SSLC & HSC",
       "year": "2019",
       "description": "The place where I grew up, nurtured my imagination, fed my curiosity, and shaped my discipline",
-      "image": "/placeholder-education-2.jpg",
+      "image": "../assets/slmhss.jpg",
       "details": {
         "honors": ["Rajya Purushkar"],
         "percentage": "95% in SSLC, 79%% in HSC"
@@ -129,21 +131,24 @@
       "title": "E-commerce Platform",
       "image": "/placeholder-project-1.jpg",
       "technologies": ["React", "Node.js", "MongoDB"],
-      "route": "/projects/ecommerce"
+      "route": "/projects/ecommerce",
+      "isCompleted": false
     },
     {
       "id": 2,
       "title": "Task Management App",
       "image": "/placeholder-project-2.jpg",
       "technologies": ["Vue.js", "Express", "PostgreSQL"],
-      "route": "/projects/task-manager"
+      "route": "/projects/task-manager",
+      "isCompleted": false
     },
     {
       "id": 3,
       "title": "Weather Dashboard",
       "image": "/placeholder-project-3.jpg",
       "technologies": ["React", "TypeScript", "API Integration"],
-      "route": "/projects/weather-dashboard"
+      "route": "/projects/weather-dashboard",
+      "isCompleted": false
     }
   ],
   "technologies": [

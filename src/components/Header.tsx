@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Download, Moon, Sun } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { useTheme } from 'next-themes';
-import portfolioData from '../data/portfolio.json';
+import {portfolioData} from '../data/portfolio.ts';
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -50,6 +50,7 @@ export const Header = () => {
                   link.click();
                 }}
                 className="h-9 w-9"
+                disabled
               >
                 <Download className="h-4 w-4" />
               </Button>

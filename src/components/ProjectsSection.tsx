@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Card, CardContent } from '../components/ui/card';
 import { useNavigate } from 'react-router-dom';
-import portfolioData from '../data/portfolio.json';
+import {portfolioData} from '../data/portfolio.ts';
 
 export const ProjectsSection = () => {
   const [currentProject, setCurrentProject] = useState(0);
@@ -42,9 +42,11 @@ export const ProjectsSection = () => {
                   {/* Overlay on hover */}
                   <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                     <div className="text-center text-white">
-                      <h3 className="text-2xl font-bold mb-2">
-                        {projects[currentProject].title}
-                      </h3>
+                        <h3 className="text-2xl font-bold mb-2">
+                        {projects[currentProject].isCompleted ? 
+                          projects[currentProject].title : 
+                          "Coming Soon"}
+                        </h3>
                       <p className="text-white/80 mb-4">Click to view details</p>
                       <div className="flex flex-wrap gap-2 justify-center">
                         {projects[currentProject].technologies.map((tech, index) => (

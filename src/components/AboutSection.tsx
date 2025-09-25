@@ -1,4 +1,4 @@
-import portfolioData from '../data/portfolio.json';
+import {portfolioData} from '../data/portfolio.ts';
 
 export const AboutSection = () => {
   return (

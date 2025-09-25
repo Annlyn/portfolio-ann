@@ -1,5 +1,5 @@
 import { Card, CardContent } from '../components/ui/card';
-import portfolioData from '../data/portfolio.json';
+import {portfolioData} from '../data/portfolio.ts';
 
 export const EducationSection = () => {
   return (
@@ -42,7 +42,7 @@ export const EducationSection = () => {
                     <div className="card-front">
                       <CardContent className="p-0 h-full rounded-lg overflow-hidden">
                         <div className="w-full h-full bg-gradient-to-br from-accent/30 to-primary/20 flex items-center justify-center">
-                          <span className="text-foreground/60">Education Image</span>
+                          <img src={edu.image} alt={`${edu.institution} - ${edu.degree}`} className="object-cover w-full h-full" />
                         </div>
                       </CardContent>
                     </div>
