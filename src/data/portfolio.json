@@ -1,0 +1,167 @@
+{
+  "personal": {
+    "name": "ANNLYN SARAH",
+    "title": "Full Stack Developer",
+    "email": "annlyn.sarahjp@gmail.com",
+    "phone": "+91 90360 55739",
+    "address": "10/30A, Singh Bhavan, Thirumukkulam street, Srivilliputtur 626-125",
+    "github": "https://github.com/annlyn",
+    "linkedin": "https://www.linkedin.com/in/annlyn-sarah/",
+    "leetcode": "https://leetcode.com/u/Annlyn/"
+  },
+  "about": {
+    "greeting": "Hey it's Ann!",
+    "description": "A passionate developer blending creativity and code to bring ideas to life. I love crafting functional, clean, and user-friendly experiences that feel as good as they look. Coming from a town rich in culture and beauty, I carry that same inspiration into my work - creating digital experiences that reflect the harmony and elegance they deserve."
+  },
+  "experience": [
+    {
+      "id": 1,
+      "company": "Ramco Systems",
+      "position": "Software Engineer 1",
+      "duration": "Sept 2023 - Present",
+      "description": "Had me engaging on technology daily, solving complex problems, and collaborating with talented teams to deliver high-quality software solutions",
+      "image": "/placeholder-experience-1.jpg",
+      "details": {
+        "responsibilities": ["Developed and maintained responsive web applications", "Configured Jenkins pipeline to minimize the build time", "Established mobile-web communication bridge to support cross-platform interactions and device sync-up"],
+        "technologies": ["React", "Node.js", "Redux", "GraphQL", "Jenkins"]
+      }
+    },
+    {
+      "id": 2,
+      "company": "Ramco Systems",
+      "position": "Intern - Project Trainee",
+      "duration": "Feb 2023 - Aug 2023",
+      "description": "Gained hands-on experience in software development, contributing to real-world projects and collaborating with cross-functional teams",
+      "image": "/placeholder-experience-2.jpg",
+      "details": {
+        "responsibilities": ["Developed responsive web applications", "Collaborated with design teams", "Maintained code quality"],
+        "technologies": ["TypeScript", "SCSS", "React", "Git"]
+      }
+    }
+  ],
+  "education": [
+    {
+      "id": 1,
+      "institution": "Ramco Institute of Technology",
+      "degree": "BE CSE",
+      "year": "Aug 2019 - May 2023",
+      "description": "The place that brought like-minded friends together, laid foundation for our careers, and carved me who I am today",
+      "image": "/placeholder-education-1.jpg",
+      "details": {
+        "gpa": "8.27/10",
+        "honors": ["NCC"],
+        "technologies": ["MERN Stack", "Data Structures", "Object Oriented Programming"]
+      }
+    },
+    {
+      "id": 2,
+      "institution": "Srivi Lions Matic Higher Secondary School",
+      "degree": "SSLC & HSC",
+      "year": "2019",
+      "description": "The place where I grew up, nurtured my imagination, fed my curiosity, and shaped my discipline",
+      "image": "/placeholder-education-2.jpg",
+      "details": {
+        "honors": ["Rajya Purushkar"],
+        "percentage": "95% in SSLC, 79%% in HSC"
+      }
+
+    }
+  ],
+  "interests": [
+    {
+      "id": 1,
+      "title": "Photography",
+      "backgroundImage": "/placeholder-interest-1.jpg",
+      "caption": "Capturing moments through the lens",
+      "summary": "I love exploring the world through photography, capturing the beauty in everyday moments and landscapes.",
+      "review": "Photography has taught me to see details and compositions that directly influence my approach to UI/UX design. The patience and creativity required have made me a better developer.",
+      "accordions": [
+        {
+          "title": "Landscape Photography",
+          "content": "My favorite type of photography, focusing on natural landscapes and outdoor scenes."
+        },
+        {
+          "title": "Street Photography",
+          "content": "Documenting everyday life and human interactions in urban environments."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Music Production",
+      "backgroundImage": "/placeholder-interest-2.jpg",
+      "caption": "Creating melodies and beats",
+      "summary": "Music production allows me to express creativity in a different medium, creating electronic and ambient music.",
+      "review": "Music production has enhanced my understanding of patterns, timing, and user experience flow in web development.",
+      "accordions": [
+        {
+          "title": "Electronic Music",
+          "content": "Creating electronic soundscapes and ambient tracks using various DAWs."
+        },
+        {
+          "title": "Sound Design",
+          "content": "Experimenting with synthesizers and audio effects to create unique sounds."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Rock Climbing",
+      "backgroundImage": "/placeholder-interest-3.jpg",
+      "caption": "Conquering heights and challenges",
+      "summary": "Rock climbing teaches problem-solving, patience, and perseverance - skills that translate perfectly to coding.",
+      "review": "The problem-solving aspect of finding the right route up a wall mirrors the process of debugging code and finding elegant solutions.",
+      "accordions": [
+        {
+          "title": "Indoor Climbing",
+          "content": "Regular training at indoor climbing gyms to build strength and technique."
+        },
+        {
+          "title": "Outdoor Adventures",
+          "content": "Exploring natural rock formations and mountain ranges for climbing challenges."
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "E-commerce Platform",
+      "image": "/placeholder-project-1.jpg",
+      "technologies": ["React", "Node.js", "MongoDB"],
+      "route": "/projects/ecommerce"
+    },
+    {
+      "id": 2,
+      "title": "Task Management App",
+      "image": "/placeholder-project-2.jpg",
+      "technologies": ["Vue.js", "Express", "PostgreSQL"],
+      "route": "/projects/task-manager"
+    },
+    {
+      "id": 3,
+      "title": "Weather Dashboard",
+      "image": "/placeholder-project-3.jpg",
+      "technologies": ["React", "TypeScript", "API Integration"],
+      "route": "/projects/weather-dashboard"
+    }
+  ],
+  "technologies": [
+    "React",
+    "TypeScript",
+    "Node.js",
+    "Python",
+    "JavaScript",
+    "CSS3",
+    "HTML5",
+    "Git",
+    "AWS",
+    "Docker",
+    "MongoDB",
+    "PostgreSQL",
+    "Vue.js",
+    "Express",
+    "REST APIs",
+    "GraphQL"
+  ]
+}

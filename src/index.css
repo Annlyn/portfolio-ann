@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Portfolio Color Palette - Light Theme */
+    --background: 45 65% 97%;           /* #fffcf2 */
+    --foreground: 30 10% 15%;           /* #252422 */
+    
+    --card: 45 65% 97%;                 /* #fffcf2 */
+    --card-foreground: 30 10% 15%;      /* #252422 */
+    
+    --popover: 45 65% 97%;              /* #fffcf2 */
+    --popover-foreground: 30 10% 15%;   /* #252422 */
+    
+    --primary: 12 85% 55%;              /* #eb5e28 */
+    --primary-foreground: 45 65% 97%;   /* #fffcf2 */
+    
+    --secondary: 30 30% 58%;            /* #ccc5b9 */
+    --secondary-foreground: 30 10% 15%; /* #252422 */
+    
+    --muted: 30 30% 58%;                /* #ccc5b9 */
+    --muted-foreground: 30 15% 25%;     /* #403d39 */
+    
+    --accent: 12 85% 55%;               /* #eb5e28 */
+    --accent-foreground: 45 65% 97%;    /* #fffcf2 */
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 45 65% 97%;
+    
+    --border: 30 30% 58%;               /* #ccc5b9 */
+    --input: 30 30% 58%;                /* #ccc5b9 */
+    --ring: 12 85% 55%;                 /* #eb5e28 */
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Portfolio Color Palette - Dark Theme */
+    --background: 30 10% 8%;             /* Darker than #252422 */
+    --foreground: 45 65% 97%;            /* #fffcf2 */
+    
+    --card: 30 10% 12%;                  /* Dark card background */
+    --card-foreground: 45 65% 97%;       /* #fffcf2 */
+    
+    --popover: 30 10% 12%;               /* Dark popover */
+    --popover-foreground: 45 65% 97%;    /* #fffcf2 */
+    
+    --primary: 12 85% 55%;               /* #eb5e28 */
+    --primary-foreground: 45 65% 97%;    /* #fffcf2 */
+    
+    --secondary: 30 15% 25%;             /* #403d39 */
+    --secondary-foreground: 45 65% 97%;  /* #fffcf2 */
+    
+    --muted: 30 15% 25%;                 /* #403d39 */
+    --muted-foreground: 30 30% 58%;      /* #ccc5b9 */
+    
+    --accent: 12 85% 55%;                /* #eb5e28 */
+    --accent-foreground: 45 65% 97%;     /* #fffcf2 */
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 45 65% 97%;
+    
+    --border: 30 15% 25%;                /* #403d39 */
+    --input: 30 15% 25%;                 /* #403d39 */
+    --ring: 12 85% 55%;                  /* #eb5e28 */
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  /* Custom backface-hidden utility */
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+  
+  /* Card Rotation Animation */
+  .card-rotate {
+    @apply transition-transform duration-500 ease-in-out;
+    transform-style: preserve-3d;
+  }
+  
+  .card-rotate:hover {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front,
+  .card-back {
+    @apply absolute inset-0 backface-hidden;
+  }
+  
+  .card-back {
+    transform: rotateY(180deg);
+  }
+  
+  /* Photo rotation for about section */
+  .photo-tilt {
+    transform: rotate(30deg);
+    @apply transition-transform duration-300 hover:rotate-12;
+  }
+  
+  /* Scroll blur effect */
+  .scroll-blur {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  
+  /* Header transition */
+  .header-transition {
+    @apply transition-all duration-500 ease-in-out;
+  }
+  
+  /* Carousel controls */
+  .carousel-control {
+    @apply bg-primary/20 backdrop-blur-sm hover:bg-primary/30 transition-all duration-300;
+  }
+  
+  /* Tech box animation */
+  .tech-box {
+    @apply transform transition-all duration-300 hover:scale-110 hover:-translate-y-2;
+  }
+}
