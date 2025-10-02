@@ -10,7 +10,7 @@ export const AboutSection = () => {
             <div className="relative">
               <div className="w-80 h-96 bg-muted rounded-lg photo-tilt shadow-2xl border-4 border-background overflow-hidden">
                 <div className="w-full h-full bg-gradient-to-br from-primary/20 to-accent/10 flex items-center justify-center">
-                  <span className="text-muted-foreground text-sm">Photo will be added later</span>
+                  {/* <img src={portfolioData.personal.photo} alt={`${portfolioData.personal.name} - ${portfolioData.personal.title}`} className="object-cover w-full h-full" /> */}
                 </div>
               </div>
               {/* Decorative elements */}

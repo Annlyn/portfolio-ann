@@ -30,7 +30,7 @@ export const InterestsSection = () => {
         {/* Background Image */}
         <div className="absolute inset-0 bg-gradient-to-br from-primary/40 to-accent/30">
           <div className="w-full h-full flex items-center justify-center text-background/60">
-            Background Image for {interests[currentSlide]?.title}
+            <img src={interests[currentSlide]?.backgroundImage} alt={interests[currentSlide]?.title} className="object-cover w-full h-full brightness-75" />
           </div>
         </div>
         
@@ -51,7 +51,7 @@ export const InterestsSection = () => {
             onClick={() => openModal(interests[currentSlide])}
             className="bg-white/20 hover:bg-white/30 text-white border border-white/30 backdrop-blur-sm px-8 py-3 text-lg transition-all duration-300"
           >
-            Learn More
+            Expand
           </Button>
         </div>
         
@@ -66,6 +66,7 @@ export const InterestsSection = () => {
         <button
           onClick={nextSlide}
           className="absolute right-6 top-1/2 -translate-y-1/2 z-20 carousel-control p-3 rounded-full"
+
         >
           <ChevronRight className="h-6 w-6 text-white" />
         </button>

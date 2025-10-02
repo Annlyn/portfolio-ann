@@ -1,4 +1,8 @@
-
+import college from '../assets/rit.png';
+import school from '../assets/school.jpg';
+import ramco from '../assets/rsl.png';
+import doriangray from '../assets/DorianGray.jpg'
+import davinci from '../assets/davincicode.jpg'
 
 export const portfolioData = {
   "personal": {
@@ -9,7 +13,8 @@ export const portfolioData = {
     "address": "10/30A, Singh Bhavan, Thirumukkulam street, Srivilliputtur 626-125",
     "github": "https://github.com/annlyn",
     "linkedin": "https://www.linkedin.com/in/annlyn-sarah/",
-    "leetcode": "https://leetcode.com/u/Annlyn/"
+    "leetcode": "https://leetcode.com/u/Annlyn/",
+    "photo": "/profile-photo.jpg"
   },
   "about": {
     "greeting": "Hey it's Ann!",
@@ -22,7 +27,7 @@ export const portfolioData = {
       "position": "Intern - Project Trainee",
       "duration": "Feb 2023 - Aug 2023",
       "description": "Gained hands-on experience in software development, contributing to real-world projects and collaborating with cross-functional teams",
-      "image": "../assets/rsl.jpg",
+      "image": ramco,
       "details": {
         "responsibilities": ["Developed responsive web applications", "Collaborated with design teams", "Maintained code quality"],
         "technologies": ["TypeScript", "SCSS", "React", "Git"]
@@ -33,8 +38,8 @@ export const portfolioData = {
       "company": "Ramco Systems",
       "position": "Software Engineer 1",
       "duration": "Sept 2023 - Present",
-      "description": "Had me engaging on technology daily, solving complex problems, and collaborating with talented teams to deliver high-quality software solutions",
-      "image": "../assets/rsl.jpg",
+      "description": "Kept me immersed in technology every day — solving complex problems, innovating solutions, and collaborating with talented teams to deliver robust, high-quality software ",
+      "image": ramco,
       "details": {
         "responsibilities": ["Developed and maintained responsive web applications", "Configured Jenkins pipeline to minimize the build time", "Established mobile-web communication bridge to support cross-platform interactions and device sync-up"],
         "technologies": ["React", "Node.js", "Redux", "GraphQL", "Jenkins"]
@@ -48,7 +53,7 @@ export const portfolioData = {
       "degree": "BE CSE",
       "year": "Aug 2019 - May 2023",
       "description": "The place that brought like-minded friends together, laid foundation for our careers, and carved me as I am today",
-      "image": "../assets/rit.jpg",
+      "image": college,
       "details": {
         "gpa": "8.27/10",
         "honors": ["NCC"],
@@ -61,7 +66,7 @@ export const portfolioData = {
       "degree": "SSLC & HSC",
       "year": "2019",
       "description": "The place where I grew up, nurtured my imagination, fed my curiosity, and shaped my discipline",
-      "image": "../assets/slmhss.jpg",
+      "image": school,
       "details": {
         "honors": ["Rajya Purushkar"],
         "percentage": "95% in SSLC, 79%% in HSC"
@@ -72,58 +77,18 @@ export const portfolioData = {
   "interests": [
     {
       "id": 1,
-      "title": "Photography",
-      "backgroundImage": "/placeholder-interest-1.jpg",
-      "caption": "Capturing moments through the lens",
-      "summary": "I love exploring the world through photography, capturing the beauty in everyday moments and landscapes.",
-      "review": "Photography has taught me to see details and compositions that directly influence my approach to UI/UX design. The patience and creativity required have made me a better developer.",
-      "accordions": [
-        {
-          "title": "Landscape Photography",
-          "content": "My favorite type of photography, focusing on natural landscapes and outdoor scenes."
-        },
-        {
-          "title": "Street Photography",
-          "content": "Documenting everyday life and human interactions in urban environments."
-        }
-      ]
+      "title": "Book",
+      "backgroundImage": doriangray,
+      "caption": "Picture of Dorian Gray",
+      "summary": "The horrible fact that we live in a world where people are judged by their appearance and not by their character. Oscar Wilde made a masterpiece of how the influence of vanity and superficiality can corrupt a person's soul.",
     },
     {
       "id": 2,
-      "title": "Music Production",
-      "backgroundImage": "/placeholder-interest-2.jpg",
-      "caption": "Creating melodies and beats",
-      "summary": "Music production allows me to express creativity in a different medium, creating electronic and ambient music.",
-      "review": "Music production has enhanced my understanding of patterns, timing, and user experience flow in web development.",
-      "accordions": [
-        {
-          "title": "Electronic Music",
-          "content": "Creating electronic soundscapes and ambient tracks using various DAWs."
-        },
-        {
-          "title": "Sound Design",
-          "content": "Experimenting with synthesizers and audio effects to create unique sounds."
-        }
-      ]
+      "title": "Book",
+      "backgroundImage": davinci,
+      "caption": "The Da Vinci Code",
+      "summary": "The mind bending suspense at the end kept me going and i can't stop looking to abyss after reading.",
     },
-    {
-      "id": 3,
-      "title": "Rock Climbing",
-      "backgroundImage": "/placeholder-interest-3.jpg",
-      "caption": "Conquering heights and challenges",
-      "summary": "Rock climbing teaches problem-solving, patience, and perseverance - skills that translate perfectly to coding.",
-      "review": "The problem-solving aspect of finding the right route up a wall mirrors the process of debugging code and finding elegant solutions.",
-      "accordions": [
-        {
-          "title": "Indoor Climbing",
-          "content": "Regular training at indoor climbing gyms to build strength and technique."
-        },
-        {
-          "title": "Outdoor Adventures",
-          "content": "Exploring natural rock formations and mountain ranges for climbing challenges."
-        }
-      ]
-    }
   ],
   "projects": [
     {
@@ -155,18 +120,19 @@ export const portfolioData = {
     "React",
     "TypeScript",
     "Node.js",
-    "Python",
     "JavaScript",
     "CSS3",
     "HTML5",
+    "Tailwind",
     "Git",
-    "AWS",
-    "Docker",
-    "MongoDB",
-    "PostgreSQL",
-    "Vue.js",
-    "Express",
+    "GraphQL",
+    "Redux",
+    "Jenkins",
     "REST APIs",
-    "GraphQL"
+    "MongoDB",
+    "SQL",
+    "Python",
+    "Java",
+
   ]
 }

@@ -36,50 +36,21 @@ export const InterestModal = ({ interest, isOpen, onClose }: InterestModalProps)
         
         <div className="grid md:grid-cols-3 gap-6 mt-6">
           {/* Image */}
-          <div className="md:col-span-1">
+          <div className="md:col-span-6">
             <div className="w-full h-48 bg-gradient-to-br from-primary/30 to-accent/20 rounded-lg flex items-center justify-center">
-              <span className="text-foreground/60 text-sm">Interest Image</span>
+              <img src={interest.backgroundImage} alt={interest.title} className="object-cover w-full h-full rounded-lg" />
             </div>
           </div>
           
           {/* Caption */}
-          <div className="md:col-span-1 flex flex-col justify-center">
+          <div className="md:col-span-6 flex flex-col justify-center">
             <h3 className="text-lg font-semibold text-foreground mb-2">
               {interest.caption}
             </h3>
-            <p className="text-muted-foreground">
+            <p className='w-full'>
               {interest.summary}
             </p>
           </div>
-          
-          {/* Summary */}
-          <div className="md:col-span-1 flex flex-col justify-center">
-            <h3 className="text-lg font-semibold text-foreground mb-2">
-              My Review
-            </h3>
-            <p className="text-muted-foreground">
-              {interest.review}
-            </p>
-          </div>
-        </div>
-        
-        {/* Accordions */}
-        <div className="mt-8">
-          <h3 className="text-xl font-semibold text-foreground mb-4">
-            More Details
-          </h3>
-          <Accordion type="single" collapsible className="w-full">
-            {interest.accordions.map((accordion, index) => (
-              <AccordionItem key={index} value={`item-${index}`}>
-                <AccordionTrigger className="text-left">
-                  {accordion.title}
-                </AccordionTrigger>
-                <AccordionContent>
-                  {accordion.content}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
         </div>
       </DialogContent>
     </Dialog>
